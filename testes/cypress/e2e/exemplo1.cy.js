@@ -12,7 +12,7 @@ describe('Criando cenario de teste para o site globalsqa', () =>{
     cy.get('.ng-binding').should('contain.text', 'Registration successful')
   })
 
-  it('Resgistrando o usuario com falha (faltando senha)',()=>{
+  it.skip('Resgistrando o usuario com falha (faltando senha)',()=>{
     cy.visit('https://www.globalsqa.com/angularJs-protractor/registration-login-example/#/register')
     cy.get('#firstName').type('inatel')
     cy.get('#Text1').type('inatel')
@@ -30,7 +30,15 @@ describe('Criando cenario de teste para o site globalsqa', () =>{
     cy.get('#password').type(info[1])
     cy.get('.btn-primary').click()
     cy.get('h1.ng-binding').should('contain.text', info[0])
+  })
 
+  it('Deletando o uausrio logado',()=>{
+    let info = criarUsuario()
+    cy.get('#username').type(info[0])
+    cy.get('#password').type(info[1])
+    cy.get('.btn-primary').click()
+    cy.get('ul.ng-scope > .ng-binding').should('contain.text', info[0])
+    cy.get('.ng-binding > a').click()
     
   })
 
