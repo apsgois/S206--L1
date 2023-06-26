@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.pokemon.pokemon</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-06-25 09:32:42 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[5:43]"><span>[5:43]</span> <span>Testando o retorno pokemon red e entrando em um  dos elementos do array de idiomas e testando o retorno do JSON</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/pokemon/pokemon.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Testando API Pokemon</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:43]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:43]</span>
+                <span class="scenario-name">Testando o retorno pokemon red e entrando em um  dos elementos do array de idiomas e testando o retorno do JSON</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>2534</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:43]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:43]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &quot;https://pokeapi.co/api/v2/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">79</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/version/2&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">17</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1337</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.46">21:32:40.584 request:
+1 &gt; GET https://pokeapi.co/api/v2/version/2
+1 &gt; Host: pokeapi.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:32:41.523 response time in milliseconds: 892
+1 &lt; 200
+1 &lt; Date: Mon, 26 Jun 2023 00:32:41 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Connection: keep-alive
+1 &lt; access-control-allow-origin: *
+1 &lt; Cache-Control: public, max-age=86400, s-maxage=86400
+1 &lt; etag: W/&quot;394-he5YHzgBajN8evt7FSI1dn2U7yw&quot;
+1 &lt; function-execution-id: hkofe7b1dzmr
+1 &lt; strict-transport-security: max-age=31556926
+1 &lt; x-cloud-trace-context: 984d41c95b2f9c9d9fabffa0e65c05a7
+1 &lt; x-country-code: CA
+1 &lt; x-orig-accept-language: en-GB,en;q=0.9,en-US;q=0.8
+1 &lt; x-powered-by: Express
+1 &lt; x-served-by: cache-yyz4531-YYZ
+1 &lt; x-cache: HIT
+1 &lt; x-cache-hits: 1
+1 &lt; x-timer: S1687739317.251162,VS0,VE269
+1 &lt; vary: Accept-Encoding,cookie,need-authorization, x-fh-requested-host, accept-encoding
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Accept-Ranges: bytes
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=M6ne6D9Oogbb3WvuUniBErQ1EzvqY2an%2FZ1ugBa0Qsp8CT61nlkVk3QGLu1eefDe0VE36sLqGe9w3YFhgDGQc7YJvHoJDF6LhZtQT4ygqQSak4TYlAXcUe4Trglp&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 7dd15ac2d9736dd7-MIA
+{&quot;names&quot;:[{&quot;name&quot;:&quot;緑&quot;,&quot;language&quot;:{&quot;name&quot;:&quot;ja-Hrkt&quot;,&quot;url&quot;:&quot;https:\/\/pokeapi.co\/api\/v2\/language\/1\/&quot;}},{&quot;name&quot;:&quot;블루&quot;,&quot;language&quot;:{&quot;name&quot;:&quot;ko&quot;,&quot;url&quot;:&quot;https:\/\/pokeapi.co\/api\/v2\/language\/3\/&quot;}},{&quot;name&quot;:&quot;藍&quot;,&quot;language&quot;:{&quot;name&quot;:&quot;zh-Hant&quot;,&quot;url&quot;:&quot;https:\/\/pokeapi.co\/api\/v2\/language\/4\/&quot;}},{&quot;name&quot;:&quot;Bleu&quot;,&quot;language&quot;:{&quot;name&quot;:&quot;fr&quot;,&quot;url&quot;:&quot;https:\/\/pokeapi.co\/api\/v2\/language\/5\/&quot;}},{&quot;name&quot;:&quot;Blau&quot;,&quot;language&quot;:{&quot;name&quot;:&quot;de&quot;,&quot;url&quot;:&quot;https:\/\/pokeapi.co\/api\/v2\/language\/6\/&quot;}},{&quot;name&quot;:&quot;Azul&quot;,&quot;language&quot;:{&quot;name&quot;:&quot;es&quot;,&quot;url&quot;:&quot;https:\/\/pokeapi.co\/api\/v2\/language\/7\/&quot;}},{&quot;name&quot;:&quot;Blu&quot;,&quot;language&quot;:{&quot;name&quot;:&quot;it&quot;,&quot;url&quot;:&quot;https:\/\/pokeapi.co\/api\/v2\/language\/8\/&quot;}},{&quot;name&quot;:&quot;Blue&quot;,&quot;language&quot;:{&quot;name&quot;:&quot;en&quot;,&quot;url&quot;:&quot;https:\/\/pokeapi.co\/api\/v2\/language\/9\/&quot;}},{&quot;name&quot;:&quot;藍&quot;,&quot;language&quot;:{&quot;name&quot;:&quot;zh-Hans&quot;,&quot;url&quot;:&quot;https:\/\/pokeapi.co\/api\/v2\/language\/12\/&quot;}}],&quot;version_group&quot;:{&quot;name&quot;:&quot;red-blue&quot;,&quot;url&quot;:&quot;https:\/\/pokeapi.co\/api\/v2\/version-group\/1\/&quot;},&quot;name&quot;:&quot;blue&quot;,&quot;id&quot;:2}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def idioma = $.names[3].language.url</span>
+      </div>
+    </div>
+    <div class="time-cell passed">23</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print idioma</span>
+      </div>
+    </div>
+    <div class="time-cell passed">74</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.49">21:32:41.629 [print] https://pokeapi.co/api/v2/language/5/ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref passed">50</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>url idioma</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">980</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.51">21:32:41.631 request:
+2 &gt; GET https://pokeapi.co/api/v2/language/5/
+2 &gt; Host: pokeapi.co
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+21:32:42.606 response time in milliseconds: 971
+2 &lt; 200
+2 &lt; Date: Mon, 26 Jun 2023 00:32:42 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Connection: keep-alive
+2 &lt; access-control-allow-origin: *
+2 &lt; Cache-Control: public, max-age=86400, s-maxage=86400
+2 &lt; etag: W/&quot;280-wcBxAgqMDDcolVK2GgRSSTHNQxk&quot;
+2 &lt; function-execution-id: 970i34gyfs9k
+2 &lt; strict-transport-security: max-age=31556926
+2 &lt; x-cloud-trace-context: 61a5cc6b7c2750b6025aebd44e219c52;o=1
+2 &lt; x-country-code: CA
+2 &lt; x-orig-accept-language: en-US,en;q=0.9
+2 &lt; x-powered-by: Express
+2 &lt; x-served-by: cache-yyz4534-YYZ
+2 &lt; x-cache: HIT
+2 &lt; x-cache-hits: 1
+2 &lt; x-timer: S1687691685.662647,VS0,VE248
+2 &lt; vary: Accept-Encoding,cookie,need-authorization, x-fh-requested-host, accept-encoding
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+2 &lt; CF-Cache-Status: HIT
+2 &lt; Age: 157
+2 &lt; Accept-Ranges: bytes
+2 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=KjkIs5NLIn7lBs8317jcgWcm2ZK7zkRNm9qUCyxq%2FNoBH2cLlPuHz4qqHANc5QidrLjBqOSpJewtLqYvxI8AH9GcBsoJhSiRntN3DEq4404wbWw4U7GxtMNYd08L&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; Server: cloudflare
+2 &lt; CF-RAY: 7dd15aca48836dd4-MIA
+{&quot;iso639&quot;:&quot;fr&quot;,&quot;names&quot;:[{&quot;name&quot;:&quot;フランス語&quot;,&quot;language&quot;:{&quot;name&quot;:&quot;ja-Hrkt&quot;,&quot;url&quot;:&quot;https:\/\/pokeapi.co\/api\/v2\/language\/1\/&quot;}},{&quot;name&quot;:&quot;프랑스어&quot;,&quot;language&quot;:{&quot;name&quot;:&quot;ko&quot;,&quot;url&quot;:&quot;https:\/\/pokeapi.co\/api\/v2\/language\/3\/&quot;}},{&quot;name&quot;:&quot;Français&quot;,&quot;language&quot;:{&quot;name&quot;:&quot;fr&quot;,&quot;url&quot;:&quot;https:\/\/pokeapi.co\/api\/v2\/language\/5\/&quot;}},{&quot;name&quot;:&quot;Französisch&quot;,&quot;language&quot;:{&quot;name&quot;:&quot;de&quot;,&quot;url&quot;:&quot;https:\/\/pokeapi.co\/api\/v2\/language\/6\/&quot;}},{&quot;name&quot;:&quot;Francés&quot;,&quot;language&quot;:{&quot;name&quot;:&quot;es&quot;,&quot;url&quot;:&quot;https:\/\/pokeapi.co\/api\/v2\/language\/7\/&quot;}},{&quot;name&quot;:&quot;French&quot;,&quot;language&quot;:{&quot;name&quot;:&quot;en&quot;,&quot;url&quot;:&quot;https:\/\/pokeapi.co\/api\/v2\/language\/9\/&quot;}}],&quot;name&quot;:&quot;fr&quot;,&quot;official&quot;:true,&quot;id&quot;:5,&quot;iso3166&quot;:&quot;fr&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref failed">53</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>match response.name == &quot;ko&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">16</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.53">21:32:42.627 src/test/java/pokemon/pokemon.feature:53
+Then match response.name == &quot;ko&quot;
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  &#39;fr&#39;
+  &#39;ko&#39;
+
+src/test/java/pokemon/pokemon.feature:53
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref skipped">54</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.id == 2</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.pokemon.pokemon</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-06-25 10:07:28 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[2:15]"><span>[2:15]</span> <span>Obter informações sobre um grupo de ovos pelo ID</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/pokemon/pokemon.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Testando API Pokemon</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:15]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:15]</span>
+                <span class="scenario-name">Obter informações sobre um grupo de ovos pelo ID</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1348</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:15]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &quot;https://pokeapi.co/docs/v2&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">84</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/egg-group/1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">17</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1241</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">22:07:27.198 request:
+1 &gt; GET https://pokeapi.co/docs/v2/egg-group/1
+1 &gt; Host: pokeapi.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:07:28.040 response time in milliseconds: 836
+1 &lt; 404
+1 &lt; Date: Mon, 26 Jun 2023 01:07:28 GMT
+1 &lt; Content-Type: text/html; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: max-age=3600
+1 &lt; last-modified: Fri, 16 Jun 2023 20:54:45 GMT
+1 &lt; strict-transport-security: max-age=31556926
+1 &lt; x-served-by: cache-mia-kmia1760099-MIA
+1 &lt; x-cache: MISS
+1 &lt; x-cache-hits: 0
+1 &lt; x-timer: S1687741648.938504,VS0,VE135
+1 &lt; vary: x-fh-requested-host, accept-encoding
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=nt6sTpYR%2BcCKLhaShrpXsahgoMFGXheI0nSXmsZ%2BQ1BTe4u8TuIhlShPFSiNZBvQ4IbqH%2BIc0x35gaviHCYfyV1MaMjkRKAu9eMR1sEMPlkFlpNX4Dj0en6q%2FMwF&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 7dd18db37edc3352-MIA
+&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({&#39;gtm.start&#39;:
+  new Date().getTime(),event:&#39;gtm.js&#39;});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.async=true;j.src=
+  &#39;https://www.googletagmanager.com/gtm.js?id=&#39;+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,&#39;script&#39;,&#39;dataLayer&#39;,&#39;GTM-MD89GGQ&#39;);&lt;/script&gt;&lt;meta name=&quot;generator&quot; content=&quot;React Static&quot;&gt;&lt;title data-react-helmet=&quot;true&quot;&gt;Page Not Found - Pok&amp;#xE9;API&lt;/title&gt;&lt;meta charset=&quot;UTF-8&quot;&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no&quot;&gt;&lt;meta data-react-helmet=&quot;true&quot; property=&quot;og:type&quot; content=&quot;website&quot;&gt;&lt;meta data-react-helmet=&quot;true&quot; name=&quot;Description&quot; content=&quot;An open RESTful API for Pok&amp;#xE9;mon data&quot;&gt;&lt;meta data-react-helmet=&quot;true&quot; property=&quot;keywords&quot; content=&quot;pokemon pok&amp;#xE9;mon API REST free&quot;&gt;&lt;meta data-react-helmet=&quot;true&quot; property=&quot;og:image&quot; content=&quot;/static/pokeapi_256.3fa72200.png&quot;&gt;&lt;meta data-react-helmet=&quot;true&quot; property=&quot;description&quot; content=&quot;An open RESTful API for Pok&amp;#xE9;mon data&quot;&gt;&lt;link rel=&quot;preload&quot; as=&quot;script&quot; href=&quot;/templates/styles.e091c1af.js&quot;&gt;&lt;link rel=&quot;preload&quot; as=&quot;script&quot; href=&quot;/templates/vendors~main.17a02a7f.js&quot;&gt;&lt;link rel=&quot;preload&quot; as=&quot;script&quot; href=&quot;/main.b36df90d.js&quot;&gt;&lt;link rel=&quot;preload&quot; as=&quot;style&quot; href=&quot;/styles.ee4e7b91.css&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/styles.ee4e7b91.css&quot;&gt;&lt;link data-react-helmet=&quot;true&quot; rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css?family=Lato:400,700&quot;&gt;&lt;link data-react-helmet=&quot;true&quot; rel=&quot;icon&quot; href=&quot;/pokeapi_192_square.png&quot;&gt;&lt;script data-react-helmet=&quot;true&quot; async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9300109033485921&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;&lt;script data-react-helmet=&quot;true&quot; async src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-53299289-1&quot;&gt;&lt;/script&gt;&lt;script data-react-helmet=&quot;true&quot;&gt;window.dataLayer = window.dataLayer || [];
+                    function gtag() {
+                        dataLayer.push(arguments)
+                    }
+                    gtag(&#39;js&#39;, new Date());
+                    gtag(&#39;config&#39;, &#39;UA-53299289-1&#39;);&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;noscript&gt;&lt;iframe src=&quot;https://www.googletagmanager.com/ns.html?id=GTM-MD89GGQ&quot; height=&quot;0&quot; width=&quot;0&quot; style=&quot;display:none;visibility:hidden&quot;&gt;&lt;/iframe&gt;&lt;/noscript&gt;&lt;div id=&quot;root&quot;&gt;&lt;div id=&quot;site-header&quot; class=&quot;Header-module__headerwrapper--2Yq6L&quot;&gt;&lt;header class=&quot;Header-module__header--3xzeo&quot;&gt;&lt;a class=&quot;Header-module__homelink--1N9Da&quot; title=&quot;Pok&amp;#xE9;API&quot; href=&quot;/&quot;&gt;&lt;img src=&quot;/static/pokeapi_256.3fa72200.png&quot; alt=&quot;Pok&amp;#xE9;API&quot;&gt;&lt;/a&gt;&lt;nav class=&quot;Header-module__nav--25Sms&quot;&gt;&lt;a class=&quot;Header-module__link--zKtyy&quot; href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;a class=&quot;Header-module__link--zKtyy&quot; href=&quot;/about&quot;&gt;About&lt;/a&gt;&lt;a class=&quot;Header-module__link--zKtyy&quot; href=&quot;/docs/v2&quot;&gt;API v2&lt;/a&gt;&lt;a class=&quot;Header-module__link--zKtyy&quot; href=&quot;/docs/graphql&quot;&gt;GraphQL v1beta&lt;/a&gt;&lt;/nav&gt;&lt;/header&gt;&lt;/div&gt;&lt;main id=&quot;site-content&quot;&gt;&lt;div class=&quot;Page-module__page--mC5go&quot;&gt;&lt;div class=&quot;Page-module__constrain_width--N2xeq&quot;&gt;&lt;h1&gt;404 &amp;#x2013; Page Not Found&lt;/h1&gt;&lt;p&gt;We couldn&amp;apos;t find what you were looking for.&lt;/p&gt;&lt;p&gt;Please contact the owner of the site that linked you to the original URL and let them know their link is broken.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/main&gt;&lt;footer id=&quot;site-footer&quot; class=&quot;Footer-module__footer--3nalg&quot;&gt;&lt;div class=&quot;Footer-module__container--yg5jX&quot;&gt;&lt;div&gt;Created by &lt;a href=&quot;https://phalt.github.io/&quot;&gt;Paul Hallett&lt;/a&gt; and other &lt;a href=&quot;https://github.com/PokeAPI/pokeapi#contributing&quot;&gt;Pok&amp;#xE9;API contributors&lt;/a&gt; around the world. Pok&amp;#xE9;mon and Pok&amp;#xE9;mon character names are trademarks of Nintendo.&lt;/div&gt;&lt;div&gt;&lt;a href=&quot;https://pokeapi.statuspage.io/&quot;&gt;&lt;img alt=&quot;Status&quot; src=&quot;https://img.shields.io/badge/dynamic/json?color=blue&amp;amp;label=status&amp;amp;query=%24.status.description&amp;amp;url=https%3A%2F%2Fzlfyqp3hlvly.statuspage.io%2Fapi%2Fv2%2Fsummary.json&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/footer&gt;&lt;/div&gt;&lt;script type=&quot;text/javascript&quot;&gt;window.__routeInfo = JSON.parse(&quot;{\&quot;template\&quot;:\&quot;__react_static_root__/src/pages/404.js\&quot;,\&quot;sharedHashesByProp\&quot;:{},\&quot;data\&quot;:{},\&quot;path\&quot;:\&quot;404\&quot;,\&quot;sharedData\&quot;:{},\&quot;siteData\&quot;:{\&quot;alerts\&quot;:[{\&quot;htmlMessage\&quot;:\&quot;&lt;p&gt;PokeAPI proudly announces Beta support for GraphQL. Access our free console at &lt;a href=\\\&quot;https://beta.pokeapi.co/graphql/console/\\\&quot;&gt;beta.pokeapi.co/graphql/console&lt;/a&gt; and take a look at the &lt;a href=\\\&quot;/docs/graphql\\\&quot;&gt;documentation&lt;/a&gt;&lt;/p&gt;\\n\&quot;,\&quot;level\&quot;:\&quot;success\&quot;,\&quot;id\&quot;:\&quot;359b722e\&quot;},{\&quot;htmlMessage\&quot;:\&quot;&lt;p&gt;&lt;strong&gt;Sword and Shield&lt;/strong&gt; data might be inaccurate and lacking in various aspects due to the fact that it is not taken directly from Nintendo&amp;#39;s Pokemon ROMs. If you spot any mistake, please report it &lt;a href=\\\&quot;https://github.com/PokeAPI/pokedex/issues\\\&quot;&gt;here&lt;/a&gt;&lt;/p&gt;\\n\&quot;,\&quot;level\&quot;:\&quot;info\&quot;,\&quot;id\&quot;:\&quot;c5278044\&quot;}]}}&quot;);&lt;/script&gt;&lt;script defer type=&quot;text/javascript&quot; src=&quot;/templates/styles.e091c1af.js&quot;&gt;&lt;/script&gt;&lt;script defer type=&quot;text/javascript&quot; src=&quot;/templates/vendors~main.17a02a7f.js&quot;&gt;&lt;/script&gt;&lt;script defer type=&quot;text/javascript&quot; src=&quot;/main.b36df90d.js&quot;&gt;&lt;/script&gt;&lt;script defer src=&quot;https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816&quot; integrity=&quot;sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==&quot; data-cf-beacon=&#39;{&quot;rayId&quot;:&quot;7dd18db37edc3352&quot;,&quot;version&quot;:&quot;2023.4.0&quot;,&quot;r&quot;:1,&quot;b&quot;:1,&quot;token&quot;:&quot;9fbcf60ab0bc4d7d9c24cc0a2b3b7af0&quot;,&quot;si&quot;:100}&#39; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;&lt;/html&gt;
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref failed">19</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">22:07:28.048 src/test/java/pokemon/pokemon.feature:19
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 836, url: https://pokeapi.co/docs/v2/egg-group/1, response: 
+&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({&#39;gtm.start&#39;:
+  new Date().getTime(),event:&#39;gtm.js&#39;});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.async=true;j.src=
+  &#39;https://www.googletagmanager.com/gtm.js?id=&#39;+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,&#39;script&#39;,&#39;dataLayer&#39;,&#39;GTM-MD89GGQ&#39;);&lt;/script&gt;&lt;meta name=&quot;generator&quot; content=&quot;React Static&quot;&gt;&lt;title data-react-helmet=&quot;true&quot;&gt;Page Not Found - Pok&amp;#xE9;API&lt;/title&gt;&lt;meta charset=&quot;UTF-8&quot;&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no&quot;&gt;&lt;meta data-react-helmet=&quot;true&quot; property=&quot;og:type&quot; content=&quot;website&quot;&gt;&lt;meta data-react-helmet=&quot;true&quot; name=&quot;Description&quot; content=&quot;An open RESTful API for Pok&amp;#xE9;mon data&quot;&gt;&lt;meta data-react-helmet=&quot;true&quot; property=&quot;keywords&quot; content=&quot;pokemon pok&amp;#xE9;mon API REST free&quot;&gt;&lt;meta data-react-helmet=&quot;true&quot; property=&quot;og:image&quot; content=&quot;/static/pokeapi_256.3fa72200.png&quot;&gt;&lt;meta data-react-helmet=&quot;true&quot; property=&quot;description&quot; content=&quot;An open RESTful API for Pok&amp;#xE9;mon data&quot;&gt;&lt;link rel=&quot;preload&quot; as=&quot;script&quot; href=&quot;/templates/styles.e091c1af.js&quot;&gt;&lt;link rel=&quot;preload&quot; as=&quot;script&quot; href=&quot;/templates/vendors~main.17a02a7f.js&quot;&gt;&lt;link rel=&quot;preload&quot; as=&quot;script&quot; href=&quot;/main.b36df90d.js&quot;&gt;&lt;link rel=&quot;preload&quot; as=&quot;style&quot; href=&quot;/styles.ee4e7b91.css&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/styles.ee4e7b91.css&quot;&gt;&lt;link data-react-helmet=&quot;true&quot; rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css?family=Lato:400,700&quot;&gt;&lt;link data-react-helmet=&quot;true&quot; rel=&quot;icon&quot; href=&quot;/pokeapi_192_square.png&quot;&gt;&lt;script data-react-helmet=&quot;true&quot; async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9300109033485921&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;&lt;script data-react-helmet=&quot;true&quot; async src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-53299289-1&quot;&gt;&lt;/script&gt;&lt;script data-react-helmet=&quot;true&quot;&gt;window.dataLayer = window.dataLayer || [];
+                    function gtag() {
+                        dataLayer.push(arguments)
+                    }
+                    gtag(&#39;js&#39;, new Date());
+                    gtag(&#39;config&#39;, &#39;UA-53299289-1&#39;);&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;noscript&gt;&lt;iframe src=&quot;https://www.googletagmanager.com/ns.html?id=GTM-MD89GGQ&quot; height=&quot;0&quot; width=&quot;0&quot; style=&quot;display:none;visibility:hidden&quot;&gt;&lt;/iframe&gt;&lt;/noscript&gt;&lt;div id=&quot;root&quot;&gt;&lt;div id=&quot;site-header&quot; class=&quot;Header-module__headerwrapper--2Yq6L&quot;&gt;&lt;header class=&quot;Header-module__header--3xzeo&quot;&gt;&lt;a class=&quot;Header-module__homelink--1N9Da&quot; title=&quot;Pok&amp;#xE9;API&quot; href=&quot;/&quot;&gt;&lt;img src=&quot;/static/pokeapi_256.3fa72200.png&quot; alt=&quot;Pok&amp;#xE9;API&quot;&gt;&lt;/a&gt;&lt;nav class=&quot;Header-module__nav--25Sms&quot;&gt;&lt;a class=&quot;Header-module__link--zKtyy&quot; href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;a class=&quot;Header-module__link--zKtyy&quot; href=&quot;/about&quot;&gt;About&lt;/a&gt;&lt;a class=&quot;Header-module__link--zKtyy&quot; href=&quot;/docs/v2&quot;&gt;API v2&lt;/a&gt;&lt;a class=&quot;Header-module__link--zKtyy&quot; href=&quot;/docs/graphql&quot;&gt;GraphQL v1beta&lt;/a&gt;&lt;/nav&gt;&lt;/header&gt;&lt;/div&gt;&lt;main id=&quot;site-content&quot;&gt;&lt;div class=&quot;Page-module__page--mC5go&quot;&gt;&lt;div class=&quot;Page-module__constrain_width--N2xeq&quot;&gt;&lt;h1&gt;404 &amp;#x2013; Page Not Found&lt;/h1&gt;&lt;p&gt;We couldn&amp;apos;t find what you were looking for.&lt;/p&gt;&lt;p&gt;Please contact the owner of the site that linked you to the original URL and let them know their link is broken.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/main&gt;&lt;footer id=&quot;site-footer&quot; class=&quot;Footer-module__footer--3nalg&quot;&gt;&lt;div class=&quot;Footer-module__container--yg5jX&quot;&gt;&lt;div&gt;Created by &lt;a href=&quot;https://phalt.github.io/&quot;&gt;Paul Hallett&lt;/a&gt; and other &lt;a href=&quot;https://github.com/PokeAPI/pokeapi#contributing&quot;&gt;Pok&amp;#xE9;API contributors&lt;/a&gt; around the world. Pok&amp;#xE9;mon and Pok&amp;#xE9;mon character names are trademarks of Nintendo.&lt;/div&gt;&lt;div&gt;&lt;a href=&quot;https://pokeapi.statuspage.io/&quot;&gt;&lt;img alt=&quot;Status&quot; src=&quot;https://img.shields.io/badge/dynamic/json?color=blue&amp;amp;label=status&amp;amp;query=%24.status.description&amp;amp;url=https%3A%2F%2Fzlfyqp3hlvly.statuspage.io%2Fapi%2Fv2%2Fsummary.json&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/footer&gt;&lt;/div&gt;&lt;script type=&quot;text/javascript&quot;&gt;window.__routeInfo = JSON.parse(&quot;{\&quot;template\&quot;:\&quot;__react_static_root__/src/pages/404.js\&quot;,\&quot;sharedHashesByProp\&quot;:{},\&quot;data\&quot;:{},\&quot;path\&quot;:\&quot;404\&quot;,\&quot;sharedData\&quot;:{},\&quot;siteData\&quot;:{\&quot;alerts\&quot;:[{\&quot;htmlMessage\&quot;:\&quot;&lt;p&gt;PokeAPI proudly announces Beta support for GraphQL. Access our free console at &lt;a href=\\\&quot;https://beta.pokeapi.co/graphql/console/\\\&quot;&gt;beta.pokeapi.co/graphql/console&lt;/a&gt; and take a look at the &lt;a href=\\\&quot;/docs/graphql\\\&quot;&gt;documentation&lt;/a&gt;&lt;/p&gt;\\n\&quot;,\&quot;level\&quot;:\&quot;success\&quot;,\&quot;id\&quot;:\&quot;359b722e\&quot;},{\&quot;htmlMessage\&quot;:\&quot;&lt;p&gt;&lt;strong&gt;Sword and Shield&lt;/strong&gt; data might be inaccurate and lacking in various aspects due to the fact that it is not taken directly from Nintendo&amp;#39;s Pokemon ROMs. If you spot any mistake, please report it &lt;a href=\\\&quot;https://github.com/PokeAPI/pokedex/issues\\\&quot;&gt;here&lt;/a&gt;&lt;/p&gt;\\n\&quot;,\&quot;level\&quot;:\&quot;info\&quot;,\&quot;id\&quot;:\&quot;c5278044\&quot;}]}}&quot;);&lt;/script&gt;&lt;script defer type=&quot;text/javascript&quot; src=&quot;/templates/styles.e091c1af.js&quot;&gt;&lt;/script&gt;&lt;script defer type=&quot;text/javascript&quot; src=&quot;/templates/vendors~main.17a02a7f.js&quot;&gt;&lt;/script&gt;&lt;script defer type=&quot;text/javascript&quot; src=&quot;/main.b36df90d.js&quot;&gt;&lt;/script&gt;&lt;script defer src=&quot;https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816&quot; integrity=&quot;sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==&quot; data-cf-beacon=&#39;{&quot;rayId&quot;:&quot;7dd18db37edc3352&quot;,&quot;version&quot;:&quot;2023.4.0&quot;,&quot;r&quot;:1,&quot;b&quot;:1,&quot;token&quot;:&quot;9fbcf60ab0bc4d7d9c24cc0a2b3b7af0&quot;,&quot;si&quot;:100}&#39; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;&lt;/html&gt;
+src/test/java/pokemon/pokemon.feature:19
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref skipped">20</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.name == &#39;monster&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref skipped">21</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.names[0].name == &#39;かいじゅう&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref skipped">22</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.pokemon_species[0].name == &#39;bulbasaur&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
